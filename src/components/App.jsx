@@ -64,8 +64,7 @@ function App() {
 
 
     return (
-        <div>
-            <h1>Gallery</h1>
+           <div>
             <SearchBar onSubmit={handleSubmit} />
             {loading && <Loader />}
             {error && <ErrorMessage />}

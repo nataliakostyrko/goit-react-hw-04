@@ -1,8 +1,8 @@
-import s from "./ImageCard.module.css";
+import css from "./ImageCard.module.css";
 
 const ImageCard = ({ imageData, OpenModal }) => {
   return (
-    <div className={s.imageCard}>
+    <div className={css.imageCard}>
       <img
         src={imageData.urls.small}
         alt={imageData.description}

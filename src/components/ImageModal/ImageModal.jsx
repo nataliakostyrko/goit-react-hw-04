@@ -1,6 +1,6 @@
 import Modal from "react-modal";
 import { IoClose } from "react-icons/io5";
-import s from "./ImageModal.module.css";
+import css from "./ImageModal.module.css";
 
 Modal.setAppElement("#root");
 
@@ -34,7 +34,7 @@ const ImageModal = ({ CloseModal, isOpen, modalData }) => {
       onRequestClose={CloseModal}
       style={customStyles}
     >
-      <button className={s.closeModalBtn} onClick={CloseModal}>
+      <button className={css.closeModalBtn} onClick={CloseModal}>
         <IoClose size={15} />
       </button>
       <img src={modalData} />

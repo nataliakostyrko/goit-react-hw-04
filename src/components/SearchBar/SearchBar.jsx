@@ -17,13 +17,14 @@ const SearchBar = ({ onSubmit }) => {
 
     return (
         <header>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={css.form}>
                 <input
                     type="text"
                     autoComplete="off"
                     value={query}
                     placeholder="Search images and photos"
                     onChange={(e) => setQuery(e.target.value)}
+                    className={css.input}
                 />
                 <button type="submit">Search</button>
             </form>

@@ -8,7 +8,7 @@ const ImageGallery = ({ images, OpenModal }) => {
     <ul className={css.gallery}>
       {images.map((image) => {
         return (
-          <li key={image.id} >
+          <li key={image.id} className={css.imagesItem} >
                 <ImageCard
                     imageData={image}
                     OpenModal={OpenModal} />
